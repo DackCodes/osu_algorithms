@@ -1,12 +1,11 @@
-"""Search OSU CSE Software 2221"""
+"""
+Perform the Hailstone algorithm
+http://web.cse.ohio-state.edu/software/2221/web-sw1/extras/instructions/hailstone-series.html
+"""
 
 
 def hail_stone(init_value: int) -> None:
-    """
-    Perform the Hailstone algorithm
-    http://web.cse.ohio-state.edu/software/2221/web-sw1/extras/instructions/hailstone-series.html
-    """
-
+    """Takes an integer, and returns a list of integers where an even integer appends int/2 and an odd appends 3(int) + 1"""
     try:
         value = int(init_value)
         if value <= 0:
